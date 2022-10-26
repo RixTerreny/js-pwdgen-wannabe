@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    text-shadow: 1px 1px black;
+}
+
+h1 span{
+    margin-top: -4px;
+}
+
+button{
+    height: 2.5rem;
+    border-radius: 10px;
+    
+    border: 2px solid rgb(44, 180, 205);
+    background-color: rgb(15, 225, 243);
+    
+}
+
+button:hover{
+    background-color: rgb(15, 205, 222);
+}
+
+.d-flex:hover span{
+    color: red;
+}
+
+.appear{
+    opacity: 0;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate{
+    from {opacity: 0%; }
+    to {opacity: 100%;}
+}
+
+.go-up{
+    padding: 0;
+    box-shadow: 1rem 0.7rem 3px rgb(42, 41, 41);
+    position: relative;
+    animation-name: img-up;
+    animation-duration: 1.6s;
+    animation-delay: 3.2s;
+    animation-timing-function: ease;
+    left: -1500px;
+    animation-fill-mode: forwards;
+}
+
+.go-up img{
+    width: 100%;
+}
+
+@keyframes img-up{
+    0% {left: -1500px; transform: rotate(0);}
+    30% {left: -450px; transform: rotate(15deg);}
+    52%{left: -550px; transform: rotate(40deg);}
+    72%{ left: 10px;transform: rotate(-15deg); }
+    80%{ left: 10px;transform: rotate(15deg); }
+    90%{ left: 0px;transform: rotate(-6deg); }
+    100% {left: 0; transform: rotate(0);}
+}
