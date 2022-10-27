@@ -13,7 +13,7 @@
 </head>
 
 
-<body class="bg-info text-white">
+<body class="text-white">
     <header>
         <div class="container">
             <div class="row text-center justify-content-center">
@@ -23,9 +23,10 @@
                             <img src="img/icons8-javascript-48.png" alt="">
                         </span>
                     </h1>
-                    <div class="d-flex justify-content-center appear align-items-center">
+                    <div class="d-flex justify-content-center appear align-items-center position-relative">
                         <h2 class="">PASSWORD GENERATA: <span id="password"></span></h2>
                         <button class="py-1 px-2 ms-2"><img src="img/icons8-copia-24.png" alt=""></button>
+                        <div class="copy">Copia</div>
                     </div>
                 </div>
             </div>
@@ -35,8 +36,16 @@
     <main>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-10 col-md-6 resize go-up mt-4">
+                <div class="col-10 col-md-5 resize go-up mt-4">
                     <img class="" src="img/ezgif.com-optimize.gif" alt="">
+                </div>
+
+                <div class="col-10 col-md-4 mt-5 d-flex justify-content-center">
+                    <ul>
+                        <li class="mb-4 mb-md-2 d-flex align-items-center appear1"><img class="me-2" src="img/icons8-ok-48.png" alt=""> Almeno una lettera maiuscola</li>
+                        <li class="mb-4 mb-md-2 d-flex align-items-center appear2" ><img class="me-2" src="img/icons8-ok-48.png" alt=""> Almeno un carattere speciale</li>
+                        <li class="mb-4 mb-md-2 d-flex align-items-center appear3"><img class="me-2" src="img/icons8-ok-48.png" alt=""> Almeno un numero</li>
+                    </ul>
                 </div>
             </div>
         </div>

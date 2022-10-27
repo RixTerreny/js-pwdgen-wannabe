@@ -7,4 +7,4 @@ const fullInfo = upper + cognome + colore;
 
 const h2Password = document.getElementById("password");
 
-h2Password.innerHTML = fullInfo + "." +21;
+h2Password.innerHTML = fullInfo + "_" + Math.round(Math.random(10)*100);

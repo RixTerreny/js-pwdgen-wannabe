@@ -5,6 +5,12 @@
     font-family: sans-serif;
 }
 
+body{
+    background: linear-gradient(20deg,#F0DB4F, grey );
+    background-size: cover;
+    background-position: 0 210px;
+}
+
 h1{
     text-shadow: 1px 1px black;
 }
@@ -13,23 +19,43 @@ h1 span{
     margin-top: -4px;
 }
 
+
+/* password section */
 button{
     height: 2.5rem;
     border-radius: 10px;
-    
-    border: 2px solid rgb(44, 180, 205);
-    background-color: rgb(15, 225, 243);
-    
+    border: 2px solid darkgrey;
+    background-color: grey;
+
+}
+
+.copy{
+    display: none;
+    position: absolute;
+    right: 11%;
+    bottom: -20px;
+    background-color: darkgray;
+    border-radius: 3px;
+    padding: 1px 0.3rem 1px 0.3rem;
+    border: 1px solid grey;
+    transition: 0.2s;
+}
+
+button:hover .copy{
+    display: block;
 }
 
 button:hover{
-    background-color: rgb(15, 205, 222);
+    background-color: rgb(185, 185, 185);
 }
 
 .d-flex:hover span{
-    color: red;
+    color: rgb(123, 212, 50);
+    text-shadow: 1px 1px 3px black;
 }
 
+
+/* delay password generation */
 .appear{
     opacity: 0;
     animation-name: animate;
@@ -43,13 +69,14 @@ button:hover{
     to {opacity: 100%;}
 }
 
+
+/* image GIF meme */
 .go-up{
     padding: 0;
-    box-shadow: 1rem 0.7rem 3px rgb(42, 41, 41);
     position: relative;
     animation-name: img-up;
     animation-duration: 1.6s;
-    animation-delay: 3.2s;
+    animation-delay: 3.1s;
     animation-timing-function: ease;
     left: -1500px;
     animation-fill-mode: forwards;
@@ -57,6 +84,7 @@ button:hover{
 
 .go-up img{
     width: 100%;
+    box-shadow: 1rem 0.7rem 3px rgb(42, 41, 41);
 }
 
 @keyframes img-up{
@@ -67,4 +95,39 @@ button:hover{
     80%{ left: 10px;transform: rotate(15deg); }
     90%{ left: 0px;transform: rotate(-6deg); }
     100% {left: 0; transform: rotate(0);}
+}
+
+/* ceck list */
+ul{
+    font-size: 1.3rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+ul img{
+    width: 1.8rem;
+}
+
+.appear1{
+    opacity: 0;
+    animation-name: animate;
+    animation-duration: 2.2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.appear2{
+    opacity: 0;
+    animation-name: animate;
+    animation-duration: 2.2s;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+}
+
+.appear3{
+    opacity: 0;
+    animation-name: animate;
+    animation-duration: 2.2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
 }
